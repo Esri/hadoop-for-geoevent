@@ -2,7 +2,7 @@
 
 ArcGIS GeoEvent Processor Sample Hadoop Outbound Connector for storing GeoEvents in HDFS.
 
-![App](https://raw.github.com/Esri/hadoop-for-geoevent/master/hadoop-for-geoevent.png)
+![App](hadoop-for-geoevent.png?raw=true)
 
 ## Features
 * Hadoop Outbound Transport
