@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transport name="HDFS" label="HDFS Outbound Transport" domain="com.esri.ges.transport.outbound" type="outbound">
+	<description>ESRI HDFS Transport for outbound streams.</description>
+	<propertyDefinitions>
+		<propertyDefinition propertyName="outputHostName"             label="Host Name" description="The name of the machine where the HDFS Namenode can be found" propertyType="String" defaultValue="localhost" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputPort"                 label="Port" description="The port where the HDFS Namenode is listening for new connections." propertyType="Integer" defaultValue="8020" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputFilePath"             label="File Path" description="The path to the folder where you want new files to be written." propertyType="String" defaultValue="/user/cloudera" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputBaseFilename"         label="Base File Name" description="This is the prefix used when creating new files. For example, entering 'data' in the base filename property and 'json' in the file extension property will result in files like data1.json, data2.json, etc." propertyType="String" defaultValue="gepOutput" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputFilenameSuffix"       label="File Extension" description="This is the filename extension used when creating new files. For example, entering 'data' in the base filename property and 'json' in the file extension property will result in files like data1.json, data2.json, etc." propertyType="String" defaultValue="" mandatory="false" readOnly="false"/> 
+		<propertyDefinition propertyName="outputUserName"             label="User Name" description="The name of the user that will own the new files" propertyType="String" defaultValue="cloudera" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputMaxEventsPerFile"     label="Maximum File Size (in GeoEvents)" description="This is the maximum number of GeoEvents written to each file.  When a file is full, a new file will be created." propertyType="Integer" defaultValue="1000000" mandatory="false" readOnly="false"/>
+	</propertyDefinitions>
+</transport>
