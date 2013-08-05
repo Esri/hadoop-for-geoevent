@@ -58,71 +58,16 @@
 						</Import-Package>
 						<Private-Package>
 						    com.esri.geoevent.transport.hdfs
-						   <!--  !com.esri.ges.*, 
-						    *;-split-package:=merge-first -->
 						</Private-Package>
 						<Export-Package/>
 						<Embed-Dependency>
-						    *;scope=compile|runtime;inline=true,
-						    log4j;inline=true
+							*;scope=compile|runtime;inline=true,
+							log4j;inline=true
 						</Embed-Dependency>
 						<Embed-Transitive>true</Embed-Transitive>
 					</instructions>
 				</configuration>
-				<!-- <configuration>
-					<instructions>
-						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
-						<Bundle-Version>${project.version}</Bundle-Version>
-						<Import-Package>
-							*;resolution:=optional
-						</Import-Package>
-						<Private-Package>*;-split-package:=merge-first</Private-Package>
-						<Export-Package></Export-Package>
-						<Embed-Dependency>*;scope=compile|runtime;inline=true</Embed-Dependency>
-						<Embed-Transitive>true</Embed-Transitive>
-					</instructions>
-				</configuration> -->
 			</plugin>
-			<!-- <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>copy-dependencies</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>copy-dependencies</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${project.build.directory}/lib</outputDirectory>
-							<overWriteReleases>false</overWriteReleases>
-							<overWriteSnapshots>false</overWriteSnapshots>
-							<overWriteIfNewer>true</overWriteIfNewer>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin> -->
-			<!-- <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.esri.geoevent.transport.hdfs.HDFSConnection</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin> -->
-			<!-- <plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
-			</plugin> -->
 		</plugins>
 	</build>
 

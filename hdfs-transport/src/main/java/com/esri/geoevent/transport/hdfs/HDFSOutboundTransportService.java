@@ -7,14 +7,14 @@ import com.esri.ges.transport.util.XmlTransportDefinition;
 
 public class HDFSOutboundTransportService extends TransportServiceBase
 {
-	public HDFSOutboundTransportService()
-	{
-		definition = new XmlTransportDefinition(getResourceAsStream("outboundtransport-definition.xml"));
-	}
+  public HDFSOutboundTransportService()
+  {
+    definition = new XmlTransportDefinition(getResourceAsStream("outboundtransport-definition.xml"));
+  }
 
-	@Override
-	public Transport createTransport() throws ComponentException
-	{
-		return new HDFSOutboundTransport(definition);
-	}
+  @Override
+  public Transport createTransport() throws ComponentException
+  {
+    return new HDFSOutboundTransport(definition);
+  }
 }
