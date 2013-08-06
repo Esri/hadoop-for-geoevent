@@ -13,7 +13,6 @@
 	<properties>
 		<contact.address>geoevent@esri.com</contact.address>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<geometry-api.version>1.6.0</geometry-api.version>
 		<maven.bundle.plugin.version>2.4.0</maven.bundle.plugin.version>
 		<junit.version>4.8.1</junit.version>
 		<hadoop.cdh4>2.0.0-cdh4.2.1</hadoop.cdh4>
@@ -32,6 +31,19 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>com.esri.geoevent.sdk</groupId>
+			<artifactId>geoevent-sdk</artifactId>
+			<version>10.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<pluginManagement>
@@ -57,13 +69,12 @@
 
 	<repositories>
 		<repository>
-			<id>ages-sdk-repo</id>
-			<url>file://${project.basedir}/../../repository</url>
-		</repository>
-		<repository>
-			<id>cloudera-releases</id>
-			<name>Cloudera Releases</name>
-			<url>https://repository.cloudera.com/content/repositories/releases</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>sonatype</id>
+			<name>sonatype</name>
+			<url>https://oss.sonatype.org/content/repositories/releases/</url>
 		</repository>
 	</repositories>
 </project>
