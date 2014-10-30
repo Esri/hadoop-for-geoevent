@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template>
   <connectors>
-    <connector label="Write CSV to Hadoop" name="hadoop-csv-out" type="outbound">
-      <adapter uri="com.esri.ges.adapter.outbound/Text/10.2.0"/>
-      <transport uri="com.esri.geoevent.transport.outbound/HDFS/10.2.0"/>
+    <connector label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_LABEL}" name="hadoop-csv-out" type="outbound">
+      <adapter uri="com.esri.ges.adapter.outbound/Text/10.3.0"/>
+      <transport uri="com.esri.geoevent.transport.outbound/HDFS/10.3.0"/>
       <defaultName>hadoop-csv-out</defaultName>
-      <description>Writes a CSV representation of each GeoEvent observed to a directory on a Hadoop Distributed File System (HDFS).</description>
+      <description>${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_DESC}</description>
       <properties>
         <advanced>
-          <property default="1000000" label="Maximum File Size (in GeoEvents)" name="outputMaxEventsPerFile" source="transport"/>
+          <property default="1000000" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_MAX_FILE_SIZE_LBL}" name="outputMaxEventsPerFile" source="transport"/>
         </advanced>
         <hidden>
-          <property default="csv" label="File Extension" name="outputFilenameSuffix" source="transport"/>
-          <property default="\n" label="Message Separator" name="MessageSeparator" source="adapter"/>
-          <property default="," label="Attribute Separator" name="AttributeSeparator" source="adapter"/>
-          <property default="text/plain" label="MIME Type" name="mimeType" source="adapter"/>
+          <property default="csv" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_FILE_EXT_LBL}" name="outputFilenameSuffix" source="transport"/>
+          <property default="\n" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_MSG_SEPARATOR_LBL}" name="MessageSeparator" source="adapter"/>
+          <property default="," label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_ATTR_SEPARATOR_LBL}" name="AttributeSeparator" source="adapter"/>
+          <property default="text/plain" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_MIME_TYPE_LBL}" name="mimeType" source="adapter"/>
         </hidden>
         <shown>
-          <property default="localhost" label="Host Name" name="outputHostName" source="transport"/>
-          <property default="8020" label="Port" name="outputPort" source="transport"/>
-          <property default="/user/cloudera" label="File Path" name="outputFilePath" source="transport"/>
-          <property default="gepOutput" label="Base File Name" name="outputBaseFilename" source="transport"/>
-          <property default="cloudera" label="User Name" name="outputUserName" source="transport"/>
+          <property default="localhost" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_HOSTNAME_LBL}" name="outputHostName" source="transport"/>
+          <property default="8020" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_PORT_LBL}" name="outputPort" source="transport"/>
+          <property default="/user/cloudera" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_FILE_PATH_LBL}" name="outputFilePath" source="transport"/>
+          <property default="gepOutput" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_BASE_FILE_PATH_LBL}" name="outputBaseFilename" source="transport"/>
+          <property default="cloudera" label="${com.esri.geoevent.transport.hdfs-transport.CONNECTOR_USERNAME_LBL}" name="outputUserName" source="transport"/>
         </shown>
       </properties>
     </connector>
