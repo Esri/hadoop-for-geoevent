@@ -10,6 +10,7 @@
 	<artifactId>hdfs-transport</artifactId>
 	<name>Esri :: GeoEvent :: Transport :: HDFS</name>
 	<packaging>bundle</packaging>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
@@ -22,20 +23,13 @@
 			<version>${hadoop.cdh4}</version>
 		</dependency>
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>[1.2.9,)</version>
-			<scope>provided</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
 	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -55,8 +49,7 @@
 						</Private-Package>
 						<Export-Package/>
 						<Embed-Dependency>
-							*;scope=compile|runtime;inline=true,
-							log4j;inline=true
+							*;scope=compile|runtime;inline=true
 						</Embed-Dependency>
 						<Embed-Transitive>true</Embed-Transitive>
 					</instructions>
