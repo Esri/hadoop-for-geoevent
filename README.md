@@ -17,7 +17,7 @@ Building the source code:
 Installing the transport and connector:
 
 1. Copy the *.jar files under the 'target' sub-folder(s) into the [ArcGIS-GeoEvent-Extension-Install-Directory]/deploy folder.
-2. Open the ArcGIS GeoEvent Extension Manager, go to the 'Site -> Configuration Store' page and import the HDFS_Connector.xml file.
+2. Open the ArcGIS GeoEvent Manager, go to the 'Site -> Configuration Store' page and import the HDFS_Connector.xml file.
 
 ## Requirements
 
@@ -29,7 +29,7 @@ Installing the transport and connector:
 ## Resources
 
 * [Download the connector's tutorial](http://www.arcgis.com/home/item.html?id=fa7b33b480c940019d17d3eb159a8b04) from the ArcGIS GeoEvent Extension Gallery
-* [ArcGIS GeoEvent Extension for Server Resource Center](http://links.esri.com/geoevent)
+* [ArcGIS GeoEvent Extension for Server Resources](http://links.esri.com/geoevent)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@esri](http://twitter.com/esri)
 
