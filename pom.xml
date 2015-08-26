@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.bundle.plugin.version>2.4.0</maven.bundle.plugin.version>
 		<junit.version>4.8.1</junit.version>
-		<hadoop.cdh4>2.0.0-cdh4.2.1</hadoop.cdh4>
+		<hadoop.version>2.6.0-cdh5.4.4.1</hadoop.version>
 	</properties>
 
 	<modules>

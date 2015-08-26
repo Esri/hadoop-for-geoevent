@@ -15,12 +15,12 @@
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-common</artifactId>
-			<version>${hadoop.cdh4}</version>
+			<version>${hadoop.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-hdfs</artifactId>
-			<version>${hadoop.cdh4}</version>
+			<version>${hadoop.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
