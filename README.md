@@ -1,6 +1,6 @@
 # hadoop-for-geoevent
 
-ArcGIS 10.3 GeoEvent Extension for Server sample Hadoop Output Connector for storing GeoEvents in HDFS.
+ArcGIS 10.4 GeoEvent Extension for Server sample Hadoop Output Connector for storing GeoEvents in HDFS.
 
 ![App](hadoop-for-geoevent.png?raw=true)
 
