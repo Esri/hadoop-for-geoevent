@@ -1,4 +1,5 @@
 # hadoop-for-geoevent
+**This item has been deprecated due to age. Requests for a new version should be directed to geoevent@esri.com.**
 
 ArcGIS 10.4 GeoEvent Extension for Server sample Hadoop Output Connector for storing GeoEvents in HDFS.
 
